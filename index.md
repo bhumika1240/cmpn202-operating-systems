@@ -12,3 +12,4 @@ Linux server administered via SSH.
 - Week 5 – Advanced Security & Monitoring
 - Week 6 – Performance Evaluation
 - Week 7 – Security Audit & Evaluation
+_Last updated: Week 1 setup_
