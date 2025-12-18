@@ -1,15 +1,8 @@
-# CMPN202 Operating Systems Coursework
-
-This website documents my Operating Systems coursework, focusing on
-the configuration, security, and performance evaluation of a headless
-Linux server administered via SSH.
-
 ## Weekly Journal
-- Week 1 – System Planning
-- Week 2 – Security Planning
-- Week 3 – Application Selection
-- Week 4 – Security Implementation
-- Week 5 – Advanced Security & Monitoring
-- Week 6 – Performance Evaluation
-- Week 7 – Security Audit & Evaluation
-_Last updated: Week 1 setup_
+- [Week 1 – System Planning](week1.md)
+- [Week 2 – Security Planning](week2.md)
+- [Week 3 – Application Selection](week3.md)
+- [Week 4 – Security Implementation](week4.md)
+- [Week 5 – Advanced Security & Monitoring](week5.md)
+- [Week 6 – Performance Evaluation](week6.md)
+- [Week 7 – Security Audit & Evaluation](week7.md)
