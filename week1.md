@@ -73,3 +73,5 @@ free -h
 df -h
 ip addr
 lsb_release -a
+
+
