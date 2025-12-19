@@ -74,3 +74,9 @@ df -h
 ip addr
 lsb_release -a
 
+ md
+### Kernel and System Information
+![uname output](images/week1/uname.png)
+This command displays detailed kernel and system information, including the Linux kernel version, system architecture, and build date. It confirms that the server is running a 64-bit Linux kernel on Ubuntu Server, which is suitable for running modern server workloads
+
+
