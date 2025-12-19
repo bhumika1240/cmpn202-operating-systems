@@ -24,11 +24,12 @@ These applications were selected because they provide coverage of the main syste
 
 ## 3. Installation Documentation (SSH-Based Installation)
 All applications will be installed on the Ubuntu Server using SSH-based remote administration from the workstation. Installation will be carried out using the system package manager.
-
 Planned installation commands include:
-sudo apt update
+
+``` sudo apt update
 sudo apt install stress-ng
-sudo apt install iperf3
+sudo apt install iperf3 ```
+
 
 
 The `dd` and `ping` commands are included by default in Ubuntu Server and do not require additional installation. Any installation steps will be performed remotely to maintain a headless server environment.
