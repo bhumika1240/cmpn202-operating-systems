@@ -67,38 +67,11 @@ This simplifies system management while still meeting coursework requirements.
 ## 6. Initial System Specification Checks
 After installing Ubuntu Server, the following commands were executed on the server to confirm system information:
 
-```bash
+bash
 uname -a
 free -h
 df -h
 ip addr
 lsb_release -a 
-
-
-## Evidence of System Verification
-
-The screenshots below show the results of basic system checks carried out on the Ubuntu Server. These checks were performed to confirm that the server was installed correctly and is running as expected. The commands provide information about the system kernel, memory usage, disk space, network configuration, and operating system version. This evidence confirms that the server environment is stable and ready for further security configuration and performance testing in later stages of the coursework.
-
-## Evidence of System Commands
-
-### Kernel and System Information
-![uname output](images/week1/uname.png)
-This command displays detailed kernel and system information, including the Linux kernel version, system architecture, and build date. It confirms that the server is running a 64-bit Linux kernel on Ubuntu Server, which is suitable for running modern server workloads.
-
-### Memory Usage
-![free output](images/week1/free.png)
-This output shows the total available system memory, current memory usage, and free memory in a human-readable format. It confirms that the server has sufficient RAM available for testing workloads and that memory usage is currently low.
-
-### Disk Usage
-![df output](images/week1/disk.png)
-The df -h command displays disk space usage across mounted file systems. This confirms the size of the virtual disk, how much space is used, and how much remains available. This information is important for performance testing and ensuring sufficient storage capacity.
-
-### Network Configuration
-![ip addr output](images/week1/network.png)
-This command lists all network interfaces and their assigned IP addresses. It confirms that the server has been assigned a private IP address within the VirtualBox isolated network, ensuring that the system is not exposed to external networks.
-
-### Operating System Version
-![OS version output](images/week1/os.png)
-This command displays detailed Linux distribution information. It confirms that Ubuntu Server 24.04 LTS is installed, ensuring long-term support and security updates, which is appropriate for a server-based environment.
 
 
