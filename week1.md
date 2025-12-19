@@ -1,6 +1,5 @@
 # Week 1 – System Planning and Distribution Selection
 
-# Week 1 – System Planning and Setup
 
 ## 1. Introduction
 This week focuses on planning the system architecture, selecting an appropriate Linux server distribution, and preparing the virtualised environment required for the CMPN202 Operating Systems coursework. The objective is to design a secure, headless Linux server administered remotely via SSH from a workstation.
