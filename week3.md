@@ -26,6 +26,7 @@ These applications were selected because they provide coverage of the main syste
 All applications will be installed on the Ubuntu Server using SSH-based remote administration from the workstation. Installation will be carried out using the system package manager.
 
 Planned installation commands include:
+
 sudo apt update
 sudo apt install stress-ng
 sudo apt install iperf3
