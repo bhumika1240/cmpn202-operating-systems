@@ -69,13 +69,9 @@ This simplifies system management while still meeting coursework requirements.
 After installing Ubuntu Server, the following commands were executed on the server to confirm system information:
 
 uname -a
-
 free -h
-
 df -h
-
 ip addr
-
 lsb_release -a 
 
 ## Evidence of System Commands
@@ -85,7 +81,8 @@ uname -a
 ![uname output](images/week1/uname.png)
 
 **Explanation:**  
-This screenshot shows the output of the `uname -a` command, confirming the Linux kernel version and system architecture. This command displays detailed kernel and system information, including the Linux kernel version, system architecture, and build date. It confirms that the server is running a 64-bit Linux kernel on Ubuntu Server, which is suitable for running modern server workloads.
+This screenshot shows the output of the `uname -a` command, which confirms the Linux kernel version, system architecture, and build information. This verifies that the server is running a 64-bit Ubuntu Linux kernel suitable for modern server workloads.
+    
 
 ---
 
@@ -95,7 +92,8 @@ free -h
 ![free output](images/week1/free.png)
 
 **Explanation:**  
-This screenshot displays current memory usage and confirms sufficient available RAM on the server. The output shows the total available system memory, current memory usage, and free memory in a human-readable format. It confirms that the server has sufficient RAM available for testing workloads and that memory usage is currently low.
+This screenshot shows the output of the `free -h` command, which displays total, used, and available system memory in a human-readable format. It confirms that sufficient RAM is available on the server for future testing workloads.
+
 
 ---
 
@@ -105,7 +103,7 @@ df -h
 ![disk usage output](images/week1/disk.png)
 
 **Explanation:**  
-This screenshot shows disk space usage across mounted file systems, confirming adequate storage availability. The df -h command displays disk space usage across mounted file systems. This confirms the size of the virtual disk, how much space is used, and how much remains available. This information is important for performance testing and ensuring sufficient storage capacity.
+This screenshot shows the output of the `df -h` command, displaying disk usage across mounted file systems. It confirms the size of the virtual disk and the amount of available storage, which is important for performance testing and system stability.
 
 ---
 
@@ -115,7 +113,8 @@ ip addr
 ![network configuration output](images/week1/network.png)
 
 **Explanation:**  
-This screenshot confirms the server’s private IP address and isolated VirtualBox network configuration. This command lists all network interfaces and their assigned IP addresses. It confirms that the server has been assigned a private IP address within the VirtualBox isolated network, ensuring that the system is not exposed to external networks.
+This screenshot shows the output of the `ip addr` command, listing the server’s network interfaces and assigned IP address. It confirms that the server is using a private IP address within an isolated VirtualBox network, ensuring the system is not exposed externally.
+
 
 ---
 
@@ -125,6 +124,6 @@ lsb_release -a
 ![operating system output](images/week1/os.png)
 
 **Explanation:**  
-This screenshot confirms that Ubuntu Server 24.04 LTS is installed on the system.This command displays detailed Linux distribution information. It confirms that Ubuntu Server 24.04 LTS is installed, ensuring long-term support and security updates, which is appropriate for a server-based environment.
+This screenshot shows the output of the `lsb_release -a` command, confirming that Ubuntu Server 24.04 LTS is installed. This ensures long-term support, regular security updates, and suitability for a server environment.
 
 
