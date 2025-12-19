@@ -21,6 +21,9 @@ The system architecture consists of two main components:
 - Runs monitoring and testing scripts
 
 This separation reflects real-world server administration practices.
+### System Architecture Diagram
+![System architecture diagram](images/week1/architecture.png)
+
 
 ---
 
