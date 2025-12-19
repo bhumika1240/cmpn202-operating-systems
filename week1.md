@@ -83,7 +83,7 @@ lsb_release -a
 ![uname output](images/week1/uname.png)
 
 **Explanation:**  
-This screenshot shows the output of the `uname -a` command, confirming the Linux kernel version and system architecture.This command displays detailed kernel and system information, including the Linux kernel version, system architecture, and build date. It confirms that the server is running a 64-bit Linux kernel on Ubuntu Server, which is suitable for running modern server workloads.
+This screenshot shows the output of the `uname -a` command, confirming the Linux kernel version and system architecture. This command displays detailed kernel and system information, including the Linux kernel version, system architecture, and build date. It confirms that the server is running a 64-bit Linux kernel on Ubuntu Server, which is suitable for running modern server workloads.
 
 ---
 
@@ -91,7 +91,7 @@ This screenshot shows the output of the `uname -a` command, confirming the Linux
 ![free output](images/week1/free.png)
 
 **Explanation:**  
-This screenshot displays current memory usage and confirms sufficient available RAM on the server.This output shows the total available system memory, current memory usage, and free memory in a human-readable format. It confirms that the server has sufficient RAM available for testing workloads and that memory usage is currently low.
+This screenshot displays current memory usage and confirms sufficient available RAM on the server. The output shows the total available system memory, current memory usage, and free memory in a human-readable format. It confirms that the server has sufficient RAM available for testing workloads and that memory usage is currently low.
 
 ---
 
@@ -99,7 +99,7 @@ This screenshot displays current memory usage and confirms sufficient available 
 ![disk usage output](images/week1/disk.png)
 
 **Explanation:**  
-This screenshot shows disk space usage across mounted file systems, confirming adequate storage availability.The df -h command displays disk space usage across mounted file systems. This confirms the size of the virtual disk, how much space is used, and how much remains available. This information is important for performance testing and ensuring sufficient storage capacity.
+This screenshot shows disk space usage across mounted file systems, confirming adequate storage availability. The df -h command displays disk space usage across mounted file systems. This confirms the size of the virtual disk, how much space is used, and how much remains available. This information is important for performance testing and ensuring sufficient storage capacity.
 
 ---
 
@@ -107,7 +107,7 @@ This screenshot shows disk space usage across mounted file systems, confirming a
 ![network configuration output](images/week1/network.png)
 
 **Explanation:**  
-This screenshot confirms the server’s private IP address and isolated VirtualBox network configuration.This command lists all network interfaces and their assigned IP addresses. It confirms that the server has been assigned a private IP address within the VirtualBox isolated network, ensuring that the system is not exposed to external networks.
+This screenshot confirms the server’s private IP address and isolated VirtualBox network configuration. This command lists all network interfaces and their assigned IP addresses. It confirms that the server has been assigned a private IP address within the VirtualBox isolated network, ensuring that the system is not exposed to external networks.
 
 ---
 
