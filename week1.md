@@ -73,3 +73,43 @@ free -h
 df -h
 ip addr
 lsb_release -a
+
+## Evidence of System Commands
+
+### Kernel and System Information
+![uname output](images/week1/uname.png)
+
+**Explanation:**  
+This screenshot shows the output of the `uname -a` command, confirming the Linux kernel version and system architecture.
+
+---
+
+### Memory Usage
+![free output](images/week1/free.png)
+
+**Explanation:**  
+This screenshot displays current memory usage and confirms sufficient available RAM on the server.
+
+---
+
+### Disk Usage
+![disk usage output](images/week1/disk.png)
+
+**Explanation:**  
+This screenshot shows disk space usage across mounted file systems, confirming adequate storage availability.
+
+---
+
+### Network Configuration
+![network configuration output](images/week1/network.png)
+
+**Explanation:**  
+This screenshot confirms the server’s private IP address and isolated VirtualBox network configuration.
+
+---
+
+### Operating System Version
+![operating system output](images/week1/os.png)
+
+**Explanation:**  
+This screenshot confirms that Ubuntu Server 24.04 LTS is installed on the system.
