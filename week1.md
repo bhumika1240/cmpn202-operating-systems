@@ -1,52 +1,69 @@
 # Week 1 – System Planning and Distribution Selection
 
+# Week 1 – System Planning and Setup
+
 ## 1. Introduction
-This week focuses on planning the system architecture, selecting a Linux server distribution, and setting up the initial virtual machine environment for the CMPN202 Operating Systems coursework. The aim is to deploy a secure, headless Linux server administered remotely.
+This week focuses on planning the system architecture, selecting an appropriate Linux server distribution, and preparing the virtualised environment required for the CMPN202 Operating Systems coursework. The objective is to design a secure, headless Linux server administered remotely via SSH from a workstation.
 
 ---
 
 ## 2. System Architecture Overview
-The coursework environment consists of two systems:
+The system architecture consists of two main components:
 
 ### Server
-- Ubuntu Server 24.04 LTS running as a headless VirtualBox VM
-- No graphical interface installed
-- Used for security configuration and performance testing
-- Managed remotely via SSH
+- Headless Linux server running in VirtualBox
+- No graphical user interface installed
+- Accessed and administered remotely using SSH
+- Used for security hardening and performance testing in later weeks
 
 ### Workstation
-- Host operating system
-- Used to administer the server via terminal and SSH
-- Used to collect evidence and manage GitHub Pages
+- Host operating system acting as the administrator machine
+- Used to connect to the server via SSH
+- Runs monitoring and testing scripts
+
+This separation reflects real-world server administration practices.
 
 ---
 
 ## 3. Network Design
-The server is connected using an isolated VirtualBox network to prevent external access.
+The virtual machines are connected using an isolated VirtualBox network to ensure security and ethical compliance.
 
-- Network type: Host-Only / Internal Network
-- Server IP address: `10.0.2.15`
-- The server is not exposed to public or university networks
+**Network configuration:**
+- VirtualBox network type: Host-Only / Internal Network
+- Static IP addressing for the server
+- SSH access restricted to the workstation only (to be enforced later using firewall rules)
 
-This design ensures a safe and ethical testing environment.
+This setup ensures the server is not exposed to external or university networks.
 
 ---
 
 ## 4. Linux Distribution Selection
 
-### Chosen Distribution: Ubuntu Server 24.04 LTS
-Ubuntu Server LTS was selected because:
-- It provides long-term security updates
-- It has strong community and documentation support
-- It includes AppArmor for mandatory access control
-- It is compatible with required tools such as Lynis and fail2ban
+### Chosen Distribution: Ubuntu Server LTS
+Ubuntu Server LTS was selected for the following reasons:
+- Long-term security updates and stability
+- Extensive documentation and community support
+- Industry relevance
+- Built-in support for AppArmor (Mandatory Access Control)
+- Compatibility with required tools such as Lynis, fail2ban, and systemd
 
-Alternative enterprise distributions were considered, but Ubuntu Server was chosen due to its ease of configuration and suitability for coursework.
+### Alternative Considered
+CentOS / Rocky Linux were considered due to their enterprise focus, but Ubuntu Server was chosen due to its simpler configuration and suitability for coursework requirements.
 
 ---
 
-## 5. Initial System Specification Checks
-The following commands were executed on the server to verify system information:
+## 5. Workstation Choice
+The host operating system was chosen as the workstation because:
+- It already includes an SSH client
+- It avoids the overhead of an additional desktop virtual machine
+- It provides direct access to GitHub and monitoring tools
+
+This simplifies system management while still meeting coursework requirements.
+
+---
+
+## 6. Initial System Specification Checks
+After installing Ubuntu Server, the following commands were executed on the server to confirm system information:
 
 ```bash
 uname -a
