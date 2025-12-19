@@ -75,3 +75,5 @@ ip addr
 lsb_release -a
 
 
+
+
