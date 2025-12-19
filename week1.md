@@ -67,15 +67,15 @@ This simplifies system management while still meeting coursework requirements.
 ## 6. Initial System Specification Checks
 After installing Ubuntu Server, the following commands were executed on the server to confirm system information:
 
-(uname -a,
+uname -a
 
-free -h,
+free -h
 
-df -h,
+df -h
 
-ip addr,
+ip addr
 
-lsb_release -a )
+lsb_release -a 
 
 ## Evidence of System Commands
 
