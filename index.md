@@ -1,5 +1,5 @@
 ## Weekly Journal
-- [Week 1 – System Planning](week1.md)
+- [Week 1 – System Planning and Distribution selection](week1.md)
 - [Week 2 – Security Planning](week2.md)
 - [Week 3 – Application Selection](week3.md)
 - [Week 4 – Security Implementation](week4.md)
