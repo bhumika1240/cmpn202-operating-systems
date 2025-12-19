@@ -27,3 +27,40 @@ All applications will be installed on the Ubuntu Server using SSH-based remote a
 
 Planned installation commands include:
 
+The `dd` and `ping` commands are included by default in Ubuntu Server and do not require additional installation. Any installation steps will be performed remotely to maintain a headless server environment.
+
+---
+
+## 4. Expected Resource Profiles
+Before execution, the expected system resource usage for each application is documented below.
+
+| Application | Expected Resource Usage |
+|------------|--------------------------|
+| stress-ng (CPU) | High CPU usage across one or more processor cores |
+| stress-ng (Memory) | High RAM usage due to memory allocation and stress |
+| dd | High disk read/write activity with minimal CPU usage |
+| iperf3 | High network bandwidth usage |
+| ping | Low bandwidth usage with focus on latency measurement |
+| HTTP service | Moderate CPU and network usage depending on request load |
+
+These expected profiles provide a baseline understanding of how each workload should affect system performance.
+
+---
+
+## 5. Monitoring Strategy
+System performance will be monitored remotely from the workstation using SSH while workloads are running on the server. Different monitoring tools will be used depending on the workload type.
+
+- CPU and memory usage will be monitored using `top` and `htop`
+- Overall system activity will be monitored using `vmstat`
+- Disk input/output activity will be monitored using `iostat`
+- Network bandwidth usage will be monitored using `iperf3` and interface statistics
+- Network latency will be monitored using `ping`
+
+Performance data will be collected during baseline and workload execution to enable comparison and identification of performance bottlenecks in later weeks.
+
+---
+
+## 6. Reflection
+This week successfully identified suitable applications and workloads for performance testing. By selecting workloads that represent different system resource demands and documenting installation steps, expected resource usage, and monitoring strategies, a strong foundation has been created for practical performance evaluation and optimisation in subsequent weeks.
+
+
