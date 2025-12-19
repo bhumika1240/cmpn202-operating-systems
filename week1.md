@@ -90,6 +90,7 @@ This screenshot shows the output of the `uname -a` command, confirming the Linux
 
 ### Memory Usage
 free -h
+
 ![free output](images/week1/free.png)
 
 **Explanation:**  
@@ -99,6 +100,7 @@ This screenshot displays current memory usage and confirms sufficient available 
 
 ### Disk Usage
 df -h
+
 ![disk usage output](images/week1/disk.png)
 
 **Explanation:**  
@@ -108,6 +110,7 @@ This screenshot shows disk space usage across mounted file systems, confirming a
 
 ### Network Configuration
 ip addr
+
 ![network configuration output](images/week1/network.png)
 
 **Explanation:**  
@@ -116,7 +119,8 @@ This screenshot confirms the server’s private IP address and isolated VirtualB
 ---
 
 ### Operating System Version
-lsb_release -a 
+lsb_release -a
+
 ![operating system output](images/week1/os.png)
 
 **Explanation:**  
