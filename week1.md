@@ -72,7 +72,8 @@ uname -a
 free -h
 df -h
 ip addr
-lsb_release -a
+lsb_release -a 
+
 
 ## Evidence of System Verification
 
