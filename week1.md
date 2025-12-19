@@ -126,3 +126,4 @@ lsb_release -a
 **Explanation:**  
 This screenshot shows the output of the `lsb_release -a` command, confirming that Ubuntu Server 24.04 LTS is installed. This ensures long-term support, regular security updates, and suitability for a server environment.
 
+
