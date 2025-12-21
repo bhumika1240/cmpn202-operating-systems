@@ -22,36 +22,66 @@ This confirms the server is running with the latest security patches.
 
 ### 2. SSH Service Status
 
-The SSH service was enabled and verified to be running correctly.
+SSH was enabled to allow secure remote administration of the server. The SSH service was verified to be running correctly.
+
 
 ![SSH Status](images/week1/week4-ssh-status.png)
+
+**Security measures applied:**
+- SSH service enabled and started
+- Root login disabled
+- Password-based authentication disabled
+- Public key authentication enabled
+
+These changes reduce the risk of brute-force attacks and unauthorized access.
 
 ---
 
 ### 3. Firewall (UFW) Status
 
-The Uncomplicated Firewall (UFW) was enabled and configured to allow SSH connections.
+The Uncomplicated Firewall (UFW) was configured to control incoming network traffic.
 
 ![UFW Status](images/week1/week4-ufw-status.png)
+
+Firewall rules applied:**
+- Firewall enabled at startup
+- SSH traffic (port 22) explicitly allowed
+- All other unsolicited incoming connections blocked by default
+
+This ensures only required services are accessible from the network.
 
 ---
 
 ### 4. Unattended Upgrades
 
-Automatic security updates were enabled using unattended-upgrades.
+Automatic updates were configured using the unattended-upgrades service to ensure critical security patches 
+are applied without manual intervention.
 
 ![Unattended Upgrades](images/week1/week4-unattended-upgrades.png)
+
+**Verification results:**
+- Unattended upgrades service is enabled
+- Service is actively running in the background
+
+This helps maintain system security over time by automatically applying updates.
+
 
 ---
 
 ### 5. AppArmor Status
 
-AppArmor was verified to be active and enforcing security profiles.
+AppArmor was verified and confirmed to be active on the system. AppArmor enforces security policies 
+that restrict what applications can access.
 
 ![AppArmor Status](images/week1/week4-apparmor-status.png)
 
+**AppArmor status results:**
+- AppArmor profiles are loaded
+- At least one process is running in enforce mode
+- No profiles are in complain or kill mode
+
+This confirms that mandatory access control is functioning correctly and enforcing security rules.
+
 ---
 
-## Summary
-
-In Week 4, basic system hardening was performed by updating the system, securing SSH access, enabling a firewall, configuring automatic updates, and verifying AppArmor enforcement.
+This week successfully implemented essential system hardening measures on the Ubuntu Server. SSH access was secured, firewall rules were applied, automatic updates were enabled, and AppArmor was confirmed to be enforcing security policies. These configurations significantly improve the security and stability of the server and provide a strong foundation for future performance monitoring and testing.
