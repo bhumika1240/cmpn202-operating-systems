@@ -1,45 +1,47 @@
-# Week 4 – Foundational Security Implementation
-# Week 4 – System Hardening and Security Configuration
-
-## Overview
-This week focused on implementing essential security configurations on the Ubuntu Server. The aim was to establish a secure baseline by enabling secure remote access, applying firewall rules, configuring automatic updates, and verifying mandatory access control mechanisms.
+## Week 4 – System Security and Hardening
 
 ---
 
-## 1. System Update and Patch Management
-The system was updated to ensure all installed packages and security patches were applied before further configuration.
+### 1. System Update
 
-![System Update](images/week4/system-update.png)
+The system was updated to ensure all packages and security patches were applied.
 
----
-
-## 2. Secure Shell (SSH) Configuration
-Secure Shell (SSH) was enabled and verified to be running correctly to allow secure remote administration of the server.
-
-![SSH Status](images/week4/ssh-status.png)
+![System Update](images/week1/week4-system-update.png)
 
 ---
 
-## 3. Firewall Configuration (UFW)
-The Uncomplicated Firewall (UFW) was enabled to restrict inbound network traffic. SSH access was explicitly allowed while all other unsolicited connections are blocked by default.
+### 2. SSH Service Status
 
-![UFW Status](images/week4/ufw-status.png)
+The SSH service was enabled and verified to be running correctly.
 
----
-
-## 4. Automatic Security Updates
-Automatic security updates were verified using the unattended-upgrades service to ensure that critical patches are installed without manual intervention.
-
-![Unattended Upgrades](images/week4/unattended-upgrades.png)
+![SSH Status](images/week1/week4-ssh-status.png)
 
 ---
 
-## 5. Mandatory Access Control – AppArmor
-AppArmor was confirmed to be active and enforcing security profiles, providing mandatory access control for system services.
+### 3. Firewall (UFW) Status
 
-![AppArmor Status](images/week4/apparmor-status.png)
+The Uncomplicated Firewall (UFW) was enabled and configured to allow SSH connections.
+
+![UFW Status](images/week1/week4-ufw-status.png)
 
 ---
 
-## Conclusion
-Week 4 successfully established a secure baseline for the Ubuntu Server. Core security controls including system updates, secure remote access, firewall protection, automatic updates, and mandatory access control were implemented and verified. This configuration provides a strong foundation for monitoring and performance testing in later weeks.
+### 4. Unattended Upgrades
+
+Automatic security updates were enabled using unattended-upgrades.
+
+![Unattended Upgrades](images/week1/week4-unattended-upgrades.png)
+
+---
+
+### 5. AppArmor Status
+
+AppArmor was verified to be active and enforcing security profiles.
+
+![AppArmor Status](images/week1/week4-apparmor-status.png)
+
+---
+
+## Summary
+
+In Week 4, basic system hardening was performed by updating the system, securing SSH access, enabling a firewall, configuring automatic updates, and verifying AppArmor enforcement.
