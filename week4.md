@@ -1,10 +1,8 @@
 ## Week 4 – System Security and Hardening
 
----
-In Week 4, the Ubuntu Server was hardened by applying essential security configurations. The focus of this week was to secure remote access, enable firewall protection, configure automatic updates, and enforce mandatory access control using AppArmor. These steps help reduce attack surfaces and improve the overall security posture of the server.
+In Week 4, the Ubuntu Server was hardened by applying essential security configurations. The focus of this week was to secure remote access, enable firewall protection, configure automatic updates, and enforce mandatory access control using AppArmor. These steps help reduce the attack surface and improve the overall security posture of the server.
 
 ---
-
 
 ### 1. System Update
 
@@ -24,16 +22,13 @@ This confirms the server is running with the latest security patches.
 
 SSH was enabled to allow secure remote administration of the server. The SSH service was verified to be running correctly.
 
-
 ![SSH Status](images/week1/week4-ssh-status.png)
 
 **Security measures applied:**
 - SSH service enabled and started
-- Root login disabled
-- Password-based authentication disabled
-- Public key authentication enabled
+- Secure remote access configured using recommended settings
 
-These changes reduce the risk of brute-force attacks and unauthorized access.
+These measures help reduce the risk of unauthorised access and brute-force attacks.
 
 ---
 
@@ -43,7 +38,7 @@ The Uncomplicated Firewall (UFW) was configured to control incoming network traf
 
 ![UFW Status](images/week1/week4-ufw-status.png)
 
-Firewall rules applied:**
+**Firewall rules applied:**
 - Firewall enabled at startup
 - SSH traffic (port 22) explicitly allowed
 - All other unsolicited incoming connections blocked by default
@@ -54,8 +49,7 @@ This ensures only required services are accessible from the network.
 
 ### 4. Unattended Upgrades
 
-Automatic updates were configured using the unattended-upgrades service to ensure critical security patches 
-are applied without manual intervention.
+Automatic updates were configured using the unattended-upgrades service to ensure critical security patches are applied without manual intervention.
 
 ![Unattended Upgrades](images/week1/week4-unattended-upgrades.png)
 
@@ -65,13 +59,11 @@ are applied without manual intervention.
 
 This helps maintain system security over time by automatically applying updates.
 
-
 ---
 
 ### 5. AppArmor Status
 
-AppArmor was verified and confirmed to be active on the system. AppArmor enforces security policies 
-that restrict what applications can access.
+AppArmor was verified and confirmed to be active on the system. AppArmor enforces security policies that restrict what applications can access.
 
 ![AppArmor Status](images/week1/week4-apparmor-status.png)
 
@@ -83,5 +75,7 @@ that restrict what applications can access.
 This confirms that mandatory access control is functioning correctly and enforcing security rules.
 
 ---
+
+## Conclusion
 
 This week successfully implemented essential system hardening measures on the Ubuntu Server. SSH access was secured, firewall rules were applied, automatic updates were enabled, and AppArmor was confirmed to be enforcing security policies. These configurations significantly improve the security and stability of the server and provide a strong foundation for future performance monitoring and testing.
