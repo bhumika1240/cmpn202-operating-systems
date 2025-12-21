@@ -1,12 +1,22 @@
 ## Week 4 – System Security and Hardening
 
 ---
+In Week 4, the Ubuntu Server was hardened by applying essential security configurations. The focus of this week was to secure remote access, enable firewall protection, configure automatic updates, and enforce mandatory access control using AppArmor. These steps help reduce attack surfaces and improve the overall security posture of the server.
+
+---
+
 
 ### 1. System Update
 
-The system was updated to ensure all packages and security patches were applied.
+The system was updated to ensure all installed packages and the kernel were up to date. Keeping the system patched is critical to protect against known vulnerabilities.
 
 ![System Update](images/week1/week4-system-update.png)
+
+- Updated package lists
+- Installed available security updates
+- Verified system services after updates
+
+This confirms the server is running with the latest security patches.
 
 ---
 
