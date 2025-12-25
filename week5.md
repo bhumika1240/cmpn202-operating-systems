@@ -1,27 +1,34 @@
+## Week 5 – System Security and Monitoring
 
-# Week 5 – Advanced Security and Monitoring Infrastructure
-
-## Overview
-Week 5 focuses on implementing advanced security controls and monitoring
-capabilities on the Ubuntu Server. This phase extends the system hardening
-performed in Week 4 by introducing mandatory access controls, automated
-security updates, intrusion prevention, security verification, and server
-monitoring.
-
-All configurations were implemented and verified using command-line tools.
-
----
-
-## 1. Mandatory Access Control – AppArmor
-
-AppArmor was used to enforce Mandatory Access Control (MAC) on the server.
-It limits application capabilities using predefined security profiles.
-
-### Verification
-The following command was used to verify AppArmor status:
+### AppArmor Status
+The following screenshot confirms that AppArmor is enabled and enforcing security profiles.
 
 ![AppArmor Status](week5-apparmor-status.png)
 
+---
 
-```bash
-sudo aa-status
+### Automatic Security Updates
+Automatic updates are enabled using unattended-upgrades.
+
+![Automatic Updates](week5-auto-updates.png)
+
+---
+
+### Fail2Ban Service Status
+Fail2Ban is running and protecting the system against brute-force attacks.
+
+![Fail2Ban Status](week5-fail2ban-status.png)
+
+---
+
+### Fail2Ban SSH Jail
+The SSH jail is active and monitoring SSH login attempts.
+
+![Fail2Ban SSH Jail](week5-fail2ban-ssh-jail.png)
+
+---
+
+### Server Monitoring Script
+A custom monitoring script displays system usage and logged-in users.
+
+![Monitoring Script Output](week5-monitor-server.png)
