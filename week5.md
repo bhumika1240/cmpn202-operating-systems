@@ -18,7 +18,6 @@ Automatic security updates were configured using the unattended-upgrades service
 
 Configuration files were verified to confirm that unattended upgrades are enabled, and the service status was checked to ensure it is actively running. This reduces the risk of known vulnerabilities being exploited due to delayed patching and aligns with secure system administration best practices.
 
-Automatic updates are enabled using unattended-upgrades.
 
 ![Automatic Updates](images/week1/week5-auto-updates.png)
 
@@ -56,6 +55,7 @@ The SSH jail is active and monitoring SSH login attempts.
 A custom monitoring script displays system usage and logged-in users.A remote monitoring script, monitor-server.sh, was developed to collect performance metrics from the server. The script is designed to run from the workstation and connect to the server via SSH.
 
 The monitoring script collects and displays:
+
 -Hostname
 -System uptime
 -CPU usage
