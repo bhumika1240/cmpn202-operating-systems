@@ -34,15 +34,15 @@ An SSH-specific jail was enabled to protect the SSH service from brute-force att
 
 ## Fail2Ban SSH Jail
 A security baseline verification script, security-baseline.sh, was created and executed on the server via SSH. The purpose of this script is to validate that all security configurations from Phases 4 and 5 are correctly applied and operational.
+The script performs automated checks including:
 
--The script performs automated checks including:
--SSH service status
--SSH password authentication configuration
--Root login policy
--AppArmor enforcement status
--Automatic security update status
--Fail2Ban service status
--Fail2Ban SSH jail status
+- SSH service status
+- SSH password authentication configuration
+- Root login policy
+- AppArmor enforcement status
+- Automatic security update status
+- Fail2Ban service status
+- Fail2Ban SSH jail status
 
 Each section of the script includes line-by-line comments explaining its functionality, ensuring clarity and maintainability. The script outputs a clear report indicating the current security posture of the system.
 The SSH jail is active and monitoring SSH login attempts.
@@ -56,12 +56,12 @@ A custom monitoring script displays system usage and logged-in users.A remote mo
 
 The monitoring script collects and displays:
 
--Hostname
--System uptime
--CPU usage
--Memory usage
--Disk usage
--Logged-in users
+- Hostname
+- System uptime
+- CPU usage
+- Memory usage
+- Disk usage
+- Logged-in users
 
 This provides real-time insight into system performance and supports proactive system administration. The script includes line-by-line comments to explain each command and its purpose.
 
