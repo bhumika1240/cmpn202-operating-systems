@@ -20,9 +20,7 @@ It limits application capabilities using predefined security profiles.
 ### Verification
 The following command was used to verify AppArmor status:
 
-week5/images/week5/
-
-[Image description](relative/path/to/image.png)
+![AppArmor Status](week5-apparmor-status.png)
 
 
 ```bash
