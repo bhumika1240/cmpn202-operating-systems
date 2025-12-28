@@ -68,16 +68,16 @@ This simplifies system management while still meeting coursework requirements.
 ## 6. Initial System Specification Checks
 After installing Ubuntu Server, the following commands were executed on the server to confirm system information:
 
-uname -a
-free -h
-df -h
-ip addr
-lsb_release -a 
+`uname -a`
+`free -h`
+`df -h`
+`ip addr`
+`lsb_release -a` 
 
 ## Evidence of System Commands
 
 ### Kernel and System Information 
-uname -a
+`uname -a`
 ![uname output](images/week1/uname.png)
 
 **Explanation:**  
@@ -87,7 +87,7 @@ This screenshot shows the output of the `uname -a` command, which confirms the L
 ---
 
 ### Memory Usage
-free -h
+`free -h`
 
 ![free output](images/week1/free.png)
 
@@ -98,7 +98,7 @@ This screenshot shows the output of the `free -h` command, which displays total,
 ---
 
 ### Disk Usage
-df -h
+`df -h`
 
 ![disk usage output](images/week1/disk.png)
 
@@ -108,7 +108,7 @@ This screenshot shows the output of the `df -h` command, displaying disk usage a
 ---
 
 ### Network Configuration
-ip addr
+`ip addr`
 
 ![network configuration output](images/week1/network.png)
 
@@ -119,7 +119,7 @@ This screenshot shows the output of the `ip addr` command, listing the server’
 ---
 
 ### Operating System Version
-lsb_release -a
+`lsb_release -a`
 
 ![operating system output](images/week1/os.png)
 
