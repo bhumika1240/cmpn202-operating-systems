@@ -138,7 +138,17 @@ These screenshots confirm that system-level optimisations were successfully appl
 
 ---
 
-## 8. Performance Data Table (Quantitative Results)
+## 8. Performance Data Table
+
+| Metric | Baseline | Under Load | After Optimisation |
+|------|---------|------------|-------------------|
+| CPU Usage | Low | Very High | Improved stability |
+| Load Average | Low | High | Drops faster |
+| Memory Usage | Stable | Increased | Improved |
+| Swap Usage | Minimal | Risk increased | Reduced |
+| Disk I/O | Low | High write activity | Normalised |
+| Network Performance | Not available | Not available | Not applicable |
+##  Performance Data Table (Quantitative Results)
 
 The table below presents approximate numeric values observed during baseline, load, and post-optimisation testing. Values are derived from system monitoring tools such as `top`, `free -h`, `vmstat`, `iostat`, and `uptime`.
 
