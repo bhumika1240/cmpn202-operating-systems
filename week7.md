@@ -27,4 +27,20 @@ This methodology aligns with real-world security auditing practices and ensures 
 The Lynis security auditing tool was selected to perform an automated system-wide security assessment.
 
 `sudo apt install lynis -y`
+![Lynis Install Attempt](images/week1/W7_Lynis_Install_01.png)
+
+![Lynis Audit Failed](images/week1/W7_Lynis_Audit_Failed_01.png)
+
+![UFW Firewall Status](images/week1/W7_UFW_Status_01.png)
+
+![SSH Verify Root Login](images/week1/W7_SSH_Verify_RootLogin_01.png)
+
+![SSH Verify Password Authentication](images/week1/W7_SSH_Verify_PasswordAuth_01.png)
+
+![AppArmor Status](images/week1/W7_AppArmor_Status_01.png)
+
+![Listening Services](images/week1/W7_Listening_Services_01.png)
+
+![Running Services](images/week1/W7_Running_Services_01.png)
+
 
