@@ -1,3 +1,8 @@
+## Operating Systems Coursework – Weekly Journal
+
+This repository contains weekly practical journals documenting system configuration,
+performance evaluation, and security auditing activities carried out throughout the module.
+
 ## Weekly Journal
 - [Week 1 – System Planning and Distribution selection](week1.md)
 - [Week 2 – Security Planning and testing Methodology](week2.md)
