@@ -34,18 +34,23 @@ This screenshot shows that the installation of Lynis was attempted using the sys
 ## 3.2 Lynis Audit Execution Attempt
 
 `sudo lynis audit system`
+
 ![Lynis Audit Failed](images/week1/W7_Lynis_Audit_Failed_01.png)
 The screenshot confirms that the audit command could not be executed because Lynis was not installed. Rather than omitting this step, the failure was recorded as evidence and the security audit continued using manual verification techniques. This reflects real-world security auditing practices where automated tools may not always be available.
 
 ## 4. Firewall Configuration Verification
-`sudo ufw status verbose
+
+`sudo ufw status verbose`
+
 ![UFW Firewall Status](images/week1/W7_UFW_Status_01.png)
 
 The firewall is active with a default policy that denies all incoming traffic while allowing outgoing connections. Only SSH traffic on port 22 is permitted, significantly reducing the system’s attack surface.
 
 ## 5. SSH Security Verification
 The SSH daemon configuration was verified.
+
 `sudo sshd -T | grep permitrootlogin`
+
 Result:
 
 ![SSH Verify Root Login](images/week1/W7_SSH_Verify_RootLogin_01.png)
@@ -54,6 +59,7 @@ This confirms that root login is restricted to key-based authentication only, pr
 
 ## 5.2 Password Authentication Policy
 Password-based SSH authentication was verified.
+
 `sudo sshd -T | grep passwordauthentication`
 
 Result:
@@ -72,6 +78,7 @@ The output confirms that AppArmor is enabled and enforcing security profiles, pr
 ## 7. Network Exposure and Listening Services
 
 Listening network services were reviewed to assess external exposure.
+
 `ss -tulnp`
 
 ![Listening Services](images/week1/W7_Listening_Services_01.png)
@@ -82,6 +89,7 @@ Only essential services are listening for incoming connections, primarily SSH, d
 
 8.1 Active Services
 Running services were reviewed to identify unnecessary or potentially insecure services.
+
 `systemctl list-units --type=service --state=running`
 
 ## 8.2 Service Justification
