@@ -25,7 +25,7 @@ The `top` command was used to monitor CPU utilisation and system load average.
 **Observation:**  
 CPU usage was low with most time spent idle, indicating stable baseline performance.
 
-![Baseline CPU](W6_Baseline_CPU_01.png)
+![Baseline CPU](images/week1/W6_Baseline_CPU_01.png)
 
 ---
 
@@ -35,27 +35,17 @@ Memory usage was monitored using `free -h` and `vmstat`.
 **Observation:**  
 Available memory was high and swap usage was minimal.
 
-![Baseline Memory](W6_Baseline_Memory_01.png)
+![Baseline Memory](images/week1/W6_Baseline_Memory_01.png)
 
 ---
 
-### 3.3 Disk Baseline
-Disk usage and I/O performance were monitored using `df -h` and `iostat`.
-
-**Observation:**  
-Disk activity was minimal with low read/write operations.
-
-![Baseline Disk](W6_Baseline_Disk_01.png)
-
----
-
-### 3.4 Network Baseline
+### 3.3 Network Baseline
 Network latency testing was attempted using the `ping` command.
 
 **Observation:**  
 The system was unable to resolve external domain names due to DNS/network restrictions within the virtual machine environment. This is a common limitation in isolated virtual machines.
 
-![Network Baseline](W6_Baseline_NetworkLatency_01.png)
+![Network Baseline](images/week1/W6_Baseline_NetworkLatency_01.png)
 
 ---
 
@@ -67,8 +57,8 @@ CPU load was generated using a continuous background process.
 **Observation:**  
 CPU utilisation increased significantly and system load average rose. Kernel watchdog warnings were observed, demonstrating how the operating system detects extreme CPU contention. After stopping the workload, the system recovered.
 
-![CPU Load](W6_Load_CPU_01.png)  
-![CPU Recovery](W6_Load_CPU_Recovery_01.png)
+![CPU Load](images/week1/W6_Load_CPU_01.png)  
+![CPU Recovery](images/week1/W6_Load_CPU_Recovery_01.png)
 
 ---
 
@@ -78,8 +68,8 @@ Memory load testing was conducted by allocating a large temporary file.
 **Observation:**  
 Used memory increased while available memory decreased. After cleanup, memory returned to normal levels.
 
-![Memory Load](W6_Load_Memory_01.png)  
-![Memory Recovery](W6_Load_Memory_Recovery_01.png)
+![Memory Load](images/week1/W6_Load_Memory_01.png)  
+![Memory Recovery](images/week1/W6_Load_Memory_Recovery_01.png)
 
 ---
 
@@ -89,7 +79,7 @@ Disk load testing was performed by writing a large temporary file to disk.
 **Observation:**  
 Disk write activity and utilisation increased during the test and normalised after file removal.
 
-![Disk Load](W6_Load_DiskIO_01.png)
+![Disk Load](images/week1/W6_Load_DiskIO_01.png)
 
 ---
 
@@ -111,7 +101,7 @@ The system swappiness value was reduced to prioritise RAM usage over swap.
 **Result:**  
 Improved memory responsiveness and reduced swap usage risk.
 
-![Swappiness Optimisation](W6_Optimisation_Swappiness_01.png)
+![Swappiness Optimisation](images/week1/W6_Optimisation_Swappiness_01.png)
 
 ---
 
@@ -121,7 +111,7 @@ An unnecessary background service was disabled to reduce resource overhead.
 **Result:**  
 Lower background CPU and memory usage.
 
-![Service Optimisation](W6_Optimisation_Service_01.png)
+![Service Optimisation](images/week1/W6_Optimisation_Service_01.png)
 
 ---
 
@@ -131,7 +121,7 @@ CPU load testing was repeated after optimisation.
 **Observation:**  
 The system demonstrated faster recovery and improved stability under load.
 
-![CPU Retest](W6_Retest_CPU_01.png)
+![CPU Retest](images/week1/W6_Retest_CPU_01.png)
 
 ---
 
