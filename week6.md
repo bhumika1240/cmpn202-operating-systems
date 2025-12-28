@@ -1,13 +1,18 @@
 ## Week 6 – Performance Evaluation & Analysis
 
-### Performance Evaluation and Analysis
-This week focuses on evaluating the performance of the Linux server operating system under different workloads. Performance evaluation involves measuring how system resources such as CPU, memory, disk I/O, and network bandwidth are used during normal operation and under increased load. Performance analysis is then used to interpret this data, identify system bottlenecks, and understand how configuration choices impact overall system efficiency, stability, and responsiveness.
+## Performance Evaluation and Analysis of Operating System Behaviour
+## 1. . Introduction
 
-### Testing Approach
+The aim of this experiment is to evaluate the performance of a Linux-based operating system under different workloads. The system behaviour was analysed by monitoring CPU usage, memory utilisation, disk I/O performance, network behaviour, system latency, and response times. Testing was conducted using baseline measurements, load testing, bottleneck identification, and optimisation techniques to understand how the operating system manages system resources under varying conditions.
 
-Performance testing is carried out to evaluate how the Linux server operating system behaves under different workloads and to identify potential performance bottlenecks. All tests are conducted by connecting remotely to the server via SSH from the workstation, ensuring the server remains headless and is administered using command-line tools only.
+## 2.Testing methodology
+Baseline performance testing
 
-System performance is monitored using standard Linux utilities such as `top`, `htop`, `free`, `df`, `iostat`, `vmstat`, and `uptime`, along with network tools including `ping` and `iperf`. Performance data is collected during baseline (idle) conditions and during application load testing, with outputs recorded through terminal screenshots and logged results.
+Application load testing
 
-Each test is executed three times, and average values are calculated to improve the accuracy and reliability of the performance analysis.
+Performance analysis and bottleneck identification
 
+Optimisation testing and retesting
+
+
+Built-in Linux monitoring tools were used due to restricted network access within the virtual machine environment.
