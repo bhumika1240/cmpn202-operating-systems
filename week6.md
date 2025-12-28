@@ -27,6 +27,8 @@ CPU usage was low with most time spent idle, indicating stable baseline performa
 
 ![Baseline CPU](images/week1/W6_Baseline_CPU_01.png)
 
+This screenshot shows the system in an idle state with low CPU utilisation and high idle percentage. It confirms that the system was not under stress during baseline testing, providing a reliable reference point for comparison with later load tests
+
 ---
 
 ### 3.2 Memory Baseline
@@ -36,6 +38,8 @@ Memory usage was monitored using `free -h` and `vmstat`.
 Available memory was high and swap usage was minimal.
 
 ![Baseline Memory](images/week1/W6_Baseline_Memory_01.png)
+
+The memory baseline demonstrates high available memory and minimal swap usage, indicating efficient memory management prior to load testing.
 
 ---
 
@@ -47,6 +51,8 @@ The system was unable to resolve external domain names due to DNS/network restri
 
 ![Network Baseline](images/week1/W6_Baseline_NetworkLatency_01.png)
 
+This screenshot highlights DNS resolution failure within the virtual machine, evidencing restricted network connectivity. This limitation was documented and considered during performance analysis.
+
 ---
 
 ## 4. Application Load Testing
@@ -57,8 +63,10 @@ CPU load was generated using a continuous background process.
 **Observation:**  
 CPU utilisation increased significantly and system load average rose. Kernel watchdog warnings were observed, demonstrating how the operating system detects extreme CPU contention. After stopping the workload, the system recovered.
 
-![CPU Load](images/week1/W6_Load_CPU_01.png)  
+![CPU Load](images/week1/W6_Load_CPU_01.png) 
+Under CPU stress, utilisation increased significantly and load average rose, demonstrating how the operating system schedules processes under extreme CPU contention.
 ![CPU Recovery](images/week1/W6_Load_CPU_Recovery_01.png)
+Under CPU stress, utilisation increased significantly and load average rose, demonstrating how the operating system schedules processes under extreme CPU contention
 
 ---
 
@@ -68,8 +76,10 @@ Memory load testing was conducted by allocating a large temporary file.
 **Observation:**  
 Used memory increased while available memory decreased. After cleanup, memory returned to normal levels.
 
-![Memory Load](images/week1/W6_Load_Memory_01.png)  
+![Memory Load](images/week1/W6_Load_Memory_01.png) 
+The memory load test illustrates a clear increase in used memory and a reduction in available memory, confirming successful memory stress generation.
 ![Memory Recovery](images/week1/W6_Load_Memory_Recovery_01.png)
+Following cleanup, memory resources were released, demonstrating that the operating system effectively reclaims memory after workload completion.
 
 ---
 
@@ -80,6 +90,7 @@ Disk load testing was performed by writing a large temporary file to disk.
 Disk write activity and utilisation increased during the test and normalised after file removal.
 
 ![Disk Load](images/week1/W6_Load_DiskIO_01.png)
+Disk I/O activity increased during the write-intensive test, indicating higher utilisation and validating disk performance monitoring under load.
 
 ---
 
@@ -123,9 +134,12 @@ The system demonstrated faster recovery and improved stability under load.
 
 ![CPU Retest](images/week1/W6_Retest_CPU_01.png)
 
+These screenshots confirm that system-level optimisations were successfully applied, reducing background overhead and improving overall system responsiveness.
+
 ---
 
 ## 8. Performance Data Table
+
 
 | Metric | Baseline | Under Load | After Optimisation |
 |------|---------|------------|-------------------|
@@ -137,6 +151,17 @@ The system demonstrated faster recovery and improved stability under load.
 | Network Performance | Not available | Not available | Not applicable |
 
 ---
+The performance data table provides a comparative summary of system behaviour across three testing phases: baseline, under load, and after optimisation. This comparison allows clear identification of performance changes and the effectiveness of applied optimisations.
+
+During baseline testing, CPU usage and load average remained low, confirming that the system was operating in an idle and stable state. Memory usage was stable with minimal swap activity, and disk I/O activity was low, indicating no resource contention prior to load testing.
+
+Under load conditions, CPU usage increased significantly and load average rose sharply, identifying the CPU as the primary performance bottleneck. Memory usage increased due to allocation stress, reducing available memory and increasing the risk of swap usage. Disk I/O activity also increased during write-intensive operations, demonstrating higher disk utilisation and latency. Network performance data was unavailable due to DNS and connectivity restrictions within the virtual machine environment.
+
+After optimisation, the system demonstrated improved stability and faster recovery. Reduced swappiness lowered the likelihood of swap usage, improving memory responsiveness under load. Disabling unnecessary background services reduced CPU and memory overhead, contributing to quicker recovery and more stable system behaviour. Overall, the table confirms that the applied optimisations had a positive impact on system performance.
 
 ## 9. Conclusion
-This experiment demonstrated how the operating system behaves under different workloads. CPU-intensive tasks caused significant load, memory allocation reduced available resources temporarily, and disk I/O increased utilisation during write operations. Two optimisations improved system responsiveness and recovery. Despite network limitations, comprehensive performance evaluation was achieved using built-in Linux tools.
+This performance evaluation demonstrated how a Linux-based operating system responds to varying workload conditions. CPU-intensive tasks produced significant load and revealed scheduling behaviour under stress, while memory and disk tests highlighted how resources are allocated and reclaimed during and after demand peaks.
+
+The identification of CPU as the primary bottleneck aligns with expected behaviour in compute-intensive workloads. Implemented optimisations, including reduced swappiness and disabling unnecessary services, contributed to improved system stability and faster recovery during retesting. Although external network testing was limited by virtual machine constraints, these limitations were appropriately documented and analysed.
+
+Overall, the experiment provided practical insight into operating system resource management and demonstrated the effectiveness of targeted optimisations in improving system performance.
