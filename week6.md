@@ -12,3 +12,14 @@ The aim of this experiment is to evaluate the performance of a Linux-based opera
 - Optimisation testing and retesting
 
 Built-in Linux monitoring tools were used due to restricted network access within the virtual machine environment.
+
+## 3. Baseline Performance Testing
+
+Baseline testing was conducted to observe system behaviour in an idle state with no additional workload applied.
+
+## 3.1 CPU Baseline
+
+The top command was used to monitor CPU utilisation and system load average.
+
+## Observation:
+The CPU usage was minimal, with most CPU time spent in the idle state. Load averages remained low, indicating no processing bottlenecks.
