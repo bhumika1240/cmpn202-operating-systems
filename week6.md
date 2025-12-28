@@ -19,7 +19,7 @@ Baseline testing was conducted to observe system behaviour in an idle state with
 
 ## 3.1 CPU Baseline
 
-The top command was used to monitor CPU utilisation and system load average.
+The 'top' command was used to monitor CPU utilisation and system load average.
 
 ## Observation:
 The CPU usage was minimal, with most CPU time spent in the idle state. Load averages remained low, indicating no processing bottlenecks.
