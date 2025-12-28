@@ -87,7 +87,7 @@ Only essential services are listening for incoming connections, primarily SSH, d
 
 ## 8. Running Services Audit
 
-8.1 Active Services
+## 8.1 Active Services
 Running services were reviewed to identify unnecessary or potentially insecure services.
 
 `systemctl list-units --type=service --state=running`
@@ -116,3 +116,5 @@ Security trade-offs include reduced convenience due to key-only authentication a
 This security audit confirms that the Linux server is securely configured with strong access controls, minimal network exposure, and enforced security policies. Firewall rules, SSH hardening, and mandatory access control mechanisms were verified using evidence-based testing.
 
 Although automated security auditing tools such as Lynis could not be installed due to network restrictions within the virtual machine environment, this limitation was fully documented and mitigated through comprehensive manual verification. Overall, the system follows secure administration best practices and demonstrates a strong security posture.
+The audit process demonstrates the importance of layered security controls and regular verification. By combining firewall enforcement, secure authentication, and mandatory access control, the system achieves a strong defensive posture suitable for production-style server environments.
+
