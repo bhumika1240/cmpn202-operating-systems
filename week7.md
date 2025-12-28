@@ -27,3 +27,4 @@ This methodology aligns with real-world security auditing practices and ensures 
 The Lynis security auditing tool was selected to perform an automated system-wide security assessment.
 
 `sudo apt install lynis -y`
+
