@@ -1,4 +1,4 @@
-## Operating Systems Coursework – Weekly Journal
+## Operating Systems Coursework 
 
 This repository contains weekly practical journals documenting system configuration,
 performance evaluation, and security auditing activities carried out throughout the module.
